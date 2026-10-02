@@ -11,10 +11,13 @@ export const profile = {
   // Drop your resume at public/resume.pdf
   resume: "/resume.pdf",
   resumeFileName: "Suman-Software-Engineer-Resume.pdf",
-  headline: "Full-stack · Next.js + NestJS · LLM & Agentic AI",
+  headline: "Full-stack · Next.js + NestJS · React Native · Agentic AI",
   hireSubject: "Opportunity for Suman – Software Engineer",
-  summary:
-    "I'm a Software Engineer with 1+ year of professional experience building full-stack web, mobile, and AI-powered applications. I've worked on products across HR, project management, and ride-sharing, along with AI and agentic products like an AI job discovery platform and an AI coding IDE, and have taken several from Figma designs to production deployment with end-to-end ownership. I work mainly with Next.js and NestJS in TypeScript, and I build LLM-powered and agentic AI applications with LangChain, LangGraph, and the Vercel AI SDK.",
+  // Each string renders as its own paragraph in About.
+  summary: [
+    "I'm a Software Engineer with 1+ year of experience building full-stack web, mobile, and AI-powered products, working mainly with Next.js and NestJS in TypeScript.",
+    "I've shipped products across HR, project management, and ride-sharing, built AI and agentic apps with LangChain and LangGraph, and taken products from Figma design to production with end-to-end ownership.",
+  ],
 };
 
 // Shown as a code-editor card in the hero. Keep each line short so it fits on phones.

@@ -176,9 +176,11 @@ function About() {
         <h2 data-reveal className="text-4xl font-bold md:text-5xl">
           About me
         </h2>
-        <p data-reveal style={delay(120)} className="mt-8 text-sm leading-7 text-muted">
-          {profile.summary}
-        </p>
+        <div data-reveal style={delay(120)} className="mt-8 space-y-4 text-sm leading-7 text-muted">
+          {profile.summary.map((para) => (
+            <p key={para}>{para}</p>
+          ))}
+        </div>
         <dl data-reveal style={delay(240)} className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-6 md:justify-start">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col-reverse">

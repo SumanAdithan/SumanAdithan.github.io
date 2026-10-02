@@ -44,7 +44,7 @@ export function Navbar() {
         scrolled || open ? "bg-background/85 shadow-lg shadow-black/30" : "bg-background/0"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-12">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-12">
         <a href="#home" className="text-lg font-bold tracking-wide transition-colors hover:text-accent">
           {profile.name}
         </a>
