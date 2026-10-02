@@ -204,7 +204,6 @@ function Experience() {
         <article key={e.company} data-reveal className="grid gap-8 border-l-2 border-accent pl-8 md:grid-cols-[1fr_2fr]">
           <div>
             <h3 className="text-2xl font-bold">{e.company}</h3>
-            <p className="mt-1 text-sm text-muted">{e.tagline}</p>
             <p className="mt-4 inline-block bg-accent/10 px-3 py-1 text-sm font-semibold text-accent">{e.role}</p>
             <p className="mt-3 text-sm font-semibold">{e.period}</p>
             <p className="mt-2 text-xs leading-5 text-muted">{e.progression}</p>

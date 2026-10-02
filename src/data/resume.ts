@@ -16,7 +16,7 @@ export const profile = {
   // Each string renders as its own paragraph in About.
   summary: [
     "I'm a Software Engineer with 1+ year of experience building full-stack web, mobile, and AI-powered products, working mainly with Next.js and NestJS in TypeScript.",
-    "I've shipped products across HR, project management, and ride-sharing, built AI and agentic apps with LangChain and LangGraph, and taken products from Figma design to production with end-to-end ownership.",
+    "I've built products across HR, project management, and ride-sharing, developed AI and agentic apps with LangChain and LangGraph, and taken products from Figma design to production with end-to-end ownership.",
   ],
 };
 
@@ -65,15 +65,15 @@ export const stats = [
 export const experience = [
   {
     company: "AgileTribers",
-    tagline: "Community-driven, AI-powered solutions",
     role: "Software Engineer",
     period: "Jul 2025 – Present",
     progression: "Joined as an intern through campus placement → converted to full-time",
     points: [
-      "Worked on 20+ web, mobile, and backend applications across HR, project management, and ride-sharing products, covering new feature development, production support, and bug fixing.",
-      "Took end-to-end ownership of several products, from Figma UI/UX through development, deployment, and production support.",
-      "Worked on AI-powered and agentic applications, including an AI job discovery platform and an enterprise AI coding IDE, using Vercel AI SDK, LangChain, and LangGraph.",
-      "Improved reliability of a ride-sharing platform with more accurate GPS/fare calculation and local-first storage to prevent data loss on poor networks.",
+      "Built a multi-tenant HR & project management SaaS end to end as the solo full-stack developer, using Next.js and NestJS.",
+      "Built and shipped an internal AI job discovery platform solo, automating daily job discovery and tracking for placement officers.",
+      "Worked on 20+ web, mobile, and backend applications across HR, project management, and ride-sharing, covering new features, production support, and bug fixing.",
+      "Worked on an enterprise agentic AI coding IDE, building planning, execution, and verification workflows with LangChain and LangGraph.",
+      "Improved the reliability of a ride-sharing platform with more accurate GPS/fare calculation and local-first storage to prevent data loss on poor networks.",
       "Built a reusable React design system from scratch based on an enterprise client's Figma UI kit.",
     ],
   },
@@ -138,7 +138,7 @@ export const companyProjects = [
     title: "HR & Project Management SaaS",
     tag: "Multi-Tenant SaaS",
     points: [
-      "Built and shipped a multi-tenant SaaS platform for HR and project management end to end as the solo full-stack developer, bringing employees, departments, onboarding, interns, and hiring together with Kanban boards, Scrum sprints, and tasks in one workspace.",
+      "Built a multi-tenant SaaS platform for HR and project management end to end as the solo full-stack developer, bringing employees, departments, onboarding, interns, and hiring together with Kanban boards, Scrum sprints, and tasks in one workspace.",
       "Built real-time collaboration: live board updates, task comments with @mentions and file attachments, live notifications, and in-app messaging with department and project channels and direct messages.",
       "Implemented role-based access for Owner, Admin, HR, and Member roles, so each person sees only the projects and data relevant to them.",
     ],
