@@ -74,7 +74,7 @@ export const experience = [
       "Worked on 20+ web, mobile, and backend applications across HR, project management, and ride-sharing, covering new features, production support, and bug fixing.",
       "Worked on an enterprise agentic AI coding IDE, building planning, execution, and verification workflows with LangChain and LangGraph.",
       "Improved the reliability of a ride-sharing platform with more accurate GPS/fare calculation and local-first storage to prevent data loss on poor networks.",
-      "Built a reusable React design system from scratch based on an enterprise client's Figma UI kit.",
+      "Built a React design system library from scratch for a leading financial services client.",
     ],
   },
 ];
@@ -105,7 +105,7 @@ export const personalProjects: PersonalProject[] = [
     },
     points: [
       "Privacy-first image toolkit: compress, convert (JPG, PNG, WEBP), resize, crop, and enhance images for free.",
-      "Image processing runs entirely in the browser with Rust + WebAssembly, with no uploads, no sign-ups, and no limits.",
+      "Image processing runs entirely in the browser with Rust + WebAssembly, so images never leave the device: no server uploads, no sign-ups, and no limits.",
       "Independently designed, built, and launched the product, reaching 1,000+ users.",
     ],
     stack: ["Rust", "WebAssembly", "TypeScript"],
@@ -138,18 +138,19 @@ export const companyProjects = [
     title: "HR & Project Management SaaS",
     tag: "Multi-Tenant SaaS",
     points: [
-      "Built a multi-tenant SaaS platform for HR and project management end to end as the solo full-stack developer, bringing employees, departments, onboarding, interns, and hiring together with Kanban boards, Scrum sprints, and tasks in one workspace.",
-      "Built real-time collaboration: live board updates, task comments with @mentions and file attachments, live notifications, and in-app messaging with department and project channels and direct messages.",
-      "Implemented role-based access for Owner, Admin, HR, and Member roles, so each person sees only the projects and data relevant to them.",
+      "Built a multi-tenant HR & project management SaaS end to end as the solo full-stack developer, using Next.js and NestJS.",
+      "Brings people (employees, onboarding, interns, hiring) and work (Kanban boards, Scrum sprints, tasks) into one workspace.",
+      "Real-time collaboration: live boards, comments with @mentions, notifications, and in-app messaging.",
+      "Role-based access for Owner, Admin, HR, and Member roles.",
     ],
   },
   {
     title: "Enterprise AI Coding IDE",
     tag: "Agentic AI",
     points: [
-      "Worked on modern Agentic AI software for intelligent software development workflows.",
-      "Developed AI workflows using LangChain and LangGraph for planning, execution and verification.",
-      "Focused on design-system-aware code generation, context management and tool integration.",
+      "Worked on an enterprise agentic AI coding IDE that plans, writes, and verifies code.",
+      "Built agent workflows with LangChain and LangGraph for planning, execution, and verification.",
+      "Focused on design-system-aware code generation, context management, and tool integration.",
     ],
   },
   {
@@ -162,7 +163,7 @@ export const companyProjects = [
     ],
   },
   {
-    title: "Tier-2 Ride-Sharing Platform",
+    title: "Ride-Sharing Platform",
     tag: "Mobile",
     points: [
       "Worked across backend, admin web, driver, and user apps, fixing production bugs and implementing features.",
@@ -171,34 +172,50 @@ export const companyProjects = [
     ],
   },
   {
-    title: "Enterprise Insurance Platform",
-    tag: "Leading Indian Financial Services Company",
+    title: "Enterprise Design System & Insurance Platform",
+    tag: "Design System · Enterprise",
     points: [
-      "Developed frontend applications for a large-scale enterprise insurance platform.",
-      "Built a React design system from scratch based on the company's Figma UI kit, creating reusable components.",
-      "Ensured consistent UI and reusable patterns across the application.",
+      "Built a React design system library from scratch, translating the client's Figma UI kit into reusable components.",
+      "Used the library to build frontend applications for a large-scale insurance platform at a leading Indian financial services company.",
+      "Kept UI consistent across the platform with shared components and reusable patterns.",
     ],
   },
 ];
 
 export const skills = [
-  { group: "Languages", items: ["JavaScript", "TypeScript", "Rust"] },
+  // Six groups fill two full rows of the three-column grid.
+  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust"] },
   {
     group: "Frontend",
-    items: ["React", "Next.js", "React Native", "Redux", "Zustand", "TanStack Query", "TanStack Table", "Tailwind CSS", "shadcn/ui"],
+    items: ["Next.js", "React", "React Native", "Redux", "Zustand", "TanStack Query", "TanStack Table", "Tailwind CSS", "shadcn/ui"],
   },
-  { group: "Backend", items: ["Node.js", "Express.js", "NestJS", "GraphQL", "tRPC", "oRPC", "Redis", "Swagger"] },
+  {
+    group: "Backend",
+    items: [
+      "NestJS",
+      "Node.js",
+      "Express.js",
+      "GraphQL",
+      "tRPC",
+      "oRPC",
+      "Redis",
+      "Swagger",
+      "Passport.js",
+      "Better Auth",
+      "NextAuth.js",
+      "Razorpay",
+    ],
+  },
   { group: "Database & ORM", items: ["SQL", "NoSQL", "Prisma", "Drizzle ORM", "Mongoose"] },
-  { group: "Authentication", items: ["Passport.js", "Better Auth", "NextAuth.js"] },
-  { group: "AI / LLM", items: ["Vercel AI SDK", "LangChain", "LangGraph"] },
+  { group: "AI & Agents", items: ["Vercel AI SDK", "LangChain", "LangGraph"] },
   {
     group: "Tools & Platforms",
-    items: ["Figma", "Git", "GitHub", "VS Code", "Postman", "SSH", "Docker", "Linux", "Vercel", "Firebase", "Google Play Console"],
+    items: ["Git", "GitHub", "Docker", "Linux", "Turborepo", "Vercel", "Firebase", "Postman", "Figma", "Google Play Console"],
   },
 ];
 
 export const education = {
-  degree: "Bachelor of Engineering in Computer Science and Engineering",
+  degree: "B.E. in Computer Science and Engineering",
   school: "M.E.T Engineering College",
   years: "2021 – 2025",
 };

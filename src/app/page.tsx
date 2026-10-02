@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CountUp } from "@/components/CountUp";
 import { Navbar } from "@/components/Navbar";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { asset, siteDescription, siteUrl } from "@/lib/site";
 import { AiIcon, AppIcon, ChevronLeft, ChevronRight, WebIcon } from "@/components/Icons";
 import {
   education,
@@ -110,13 +111,17 @@ function Hero() {
             <span className="absolute -bottom-3 left-1/2 h-0.5 w-32 -translate-x-1/2 bg-accent md:top-1/2 md:right-full md:bottom-auto md:left-auto md:mr-4 md:w-screen md:translate-x-0 animate-grow-x md:origin-right" style={delay(450)} />
             I&apos;m {firstName}
           </p>
-          <h1 style={delay(220)} className="animate-fade-up mt-8 text-4xl font-bold md:text-5xl lg:text-6xl">{profile.role}</h1>
+          <h1 style={delay(220)} className="animate-fade-up mt-8 text-4xl font-bold md:text-5xl lg:text-6xl">
+            {/* Name for search engines and screen readers; visually shown above as "I'm Suman" */}
+            <span className="sr-only">{profile.name}, </span>
+            {profile.role}
+          </h1>
           <p className="animate-fade-up mt-4 text-sm text-muted md:text-base" style={delay(320)}>
             {profile.headline}
           </p>
           <div className="animate-fade-up mt-12 flex justify-center gap-4 md:justify-start" style={delay(420)}>
             <a
-              href={profile.resume}
+              href={asset(profile.resume)}
               download={profile.resumeFileName}
               className="border-2 border-accent bg-accent px-6 py-3 text-sm font-semibold transition hover:brightness-110 duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/25"
             >
@@ -262,7 +267,7 @@ function Projects() {
             {p.image && (
               <a href={p.url} target="_blank" rel="noreferrer" className="group/img flex items-center justify-center overflow-hidden bg-white/[0.03] p-6 sm:p-10">
                 <Image
-                  src={p.image.src}
+                  src={asset(p.image.src)}
                   alt={p.image.alt}
                   width={p.image.width}
                   height={p.image.height}
@@ -408,9 +413,28 @@ function Contact() {
   );
 }
 
+// Structured data so search engines understand who this page is about.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  url: siteUrl,
+  jobTitle: profile.role,
+  description: siteDescription,
+  email: `mailto:${profile.email}`,
+  worksFor: { "@type": "Organization", name: experience[0].company },
+  alumniOf: { "@type": "CollegeOrUniversity", name: education.school },
+  knowsAbout: skills.flatMap((g) => g.items),
+  sameAs: [profile.linkedin, profile.github, profile.figma],
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c") }}
+      />
       <Navbar />
       <main className="flex-1">
         <Hero />
