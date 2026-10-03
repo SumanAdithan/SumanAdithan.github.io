@@ -100,8 +100,8 @@ export const personalProjects: PersonalProject[] = [
     image: {
       src: "/my-local-image.png",
       alt: "My Local Image compressor showing a before/after comparison that saved 84% of the file size",
-      width: 1891,
-      height: 880,
+      width: 2880,
+      height: 1664,
     },
     points: [
       "Privacy-first image toolkit: compress, convert (JPG, PNG, WEBP), resize, crop, and enhance images for free.",
