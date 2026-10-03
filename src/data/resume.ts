@@ -70,12 +70,12 @@ export const experience = [
     progression: "Joined as an intern through campus placement → converted to full-time",
     points: [
       "Built a multi-tenant HR & project management SaaS end to end as the solo full-stack developer, using Next.js and NestJS.",
-      "Built and shipped an internal AI job discovery platform solo, automating daily job discovery and tracking for placement officers.",
+      "Built and shipped an internal AI job discovery platform as the sole developer, automating daily job discovery and tracking for a software training academy.",
       "Built a React Native water treatment app for a chemical manufacturer, with readings and reports.",
       "Worked on 20+ web, mobile, and backend applications across HR, project management, and ride-sharing, covering new features, production support, and bug fixing.",
       "Worked on an enterprise agentic AI coding IDE, building planning, execution, and verification workflows with LangChain and LangGraph.",
       "Improved the reliability of a ride-sharing platform with more accurate GPS/fare calculation and local-first storage to prevent data loss on poor networks.",
-      "Built a React design system library from scratch for a leading financial services client.",
+      "Built a React design system library from scratch and used it to deliver the frontend of a large-scale insurance platform for a leading financial services client.",
     ],
   },
 ];
@@ -158,7 +158,7 @@ export const companyProjects = [
     title: "AI-Powered Job Discovery Platform",
     tag: "AI · Internal Tool",
     points: [
-      "Built and shipped an internal AI-powered job discovery platform end to end as the solo full-stack developer, helping placement officers find relevant opportunities for students.",
+      "Built and shipped an internal AI-powered job discovery platform end to end as the solo full-stack developer, helping a software training academy find relevant job opportunities for its students.",
       "Automated keyword-based job discovery with daily tracking of new opportunities.",
       "Built the backend workflows and data processing behind discovery and tracking.",
     ],
