@@ -71,6 +71,7 @@ export const experience = [
     points: [
       "Built a multi-tenant HR & project management SaaS end to end as the solo full-stack developer, using Next.js and NestJS.",
       "Built and shipped an internal AI job discovery platform solo, automating daily job discovery and tracking for placement officers.",
+      "Built a React Native water treatment app for a chemical manufacturer, with readings and reports.",
       "Worked on 20+ web, mobile, and backend applications across HR, project management, and ride-sharing, covering new features, production support, and bug fixing.",
       "Worked on an enterprise agentic AI coding IDE, building planning, execution, and verification workflows with LangChain and LangGraph.",
       "Improved the reliability of a ride-sharing platform with more accurate GPS/fare calculation and local-first storage to prevent data loss on poor networks.",
@@ -178,6 +179,15 @@ export const companyProjects = [
       "Built a React design system library from scratch, translating the client's Figma UI kit into reusable components.",
       "Used the library to build frontend applications for a large-scale insurance platform at a leading Indian financial services company.",
       "Kept UI consistent across the platform with shared components and reusable patterns.",
+    ],
+  },
+  {
+    title: "Water Treatment Mobile App",
+    tag: "Mobile · React Native",
+    points: [
+      "Built a React Native app for a chemical manufacturer.",
+      "Users enter water test readings and elemental analysis; a calculation engine recommends the right chemical product and dosage.",
+      "Generates reports from the readings and recommendations.",
     ],
   },
 ];
